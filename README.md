@@ -1,4 +1,6 @@
 # yun-webos
+
 简化版微应用
 
-s
+
+demo 启动:npm run dev:all
