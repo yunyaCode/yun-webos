@@ -1,0 +1,11 @@
+div {
+  color: red;
+}
+
+html .live {
+  background: #000;
+}
+
+html body .live .btn {
+  color: #fff;
+}

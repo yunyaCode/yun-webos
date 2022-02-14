@@ -1,0 +1,14 @@
+
+@import "../apc-ui/variable.scss";
+
+
+// .wxReserce .mContent{background:red;}
+.wxReserce .mContent .pic{width:rem(750);height:rem(421);background:#000;}
+.wxReserce .mContent .name{position:relative;padding:rem(30) rem(50) 0 rem(200);font-size:rem(30);line-height:1.5;}
+.wxReserce .mContent .name:before{content:"直播名称：";position:absolute;top:rem(30);left:rem(50);font-weight:700;}
+.wxReserce .mContent .time{padding:rem(30) rem(50);font-size:rem(30);line-height:1.5}
+.wxReserce .mContent .time:before{content:"直播时间："}
+.wxReserce .mContent .mo{border-top:rem(10) solid #EEE;}
+.wxReserce .mContent .mo .btn{display:flex;justify-content:center;align-items:center;width:rem(650);height:rem(100);margin:rem(50) auto;border-radius:rem(10);background:red;}
+.wxReserce .mContent .mo .btn:before{content:"立即预约";font-size:rem(30);}
+

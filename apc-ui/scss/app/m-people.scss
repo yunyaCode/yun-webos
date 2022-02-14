@@ -1,0 +1,163 @@
+
+@import "../apc-ui/variable.scss";
+
+.P.people .L{padding-bottom:rem(150);}
+.P.people .head{overflow:visible;height:rem(400);border-bottom:rem(20) solid #F5F5F5;@extend %center_flex;}
+// .P.people .mUser{width:rem(100);height:rem(100);background:red;}
+// .P.people .mUser .pic.logo{width:rem(120);height:rem(120);margin:0 auto;border-radius:rem(80);background-size:cover;background-position:center;background-color:#FFF;background-clip:content-box;}
+// .P.people .mUser .pic.logo .icon{display:block;}
+// .P.people .mUser .name{text-align:center;font-size:rem(40);line-height:2;}
+.P.people .func .panel{border-bottom:rem(20) solid #F5F5F5;}
+.P.people .mFunc{position:relative;height:rem(120);display:flex;align-items:center;background:rgba(#FFF,.8);-webkit-backdrop-filter:saturate(180%) blur(rem(20));backdrop-filter:saturate(180%) blur(rem(20));}
+.P.people .mFunc .pic{position:absolute;top:0;left:0;width:rem(120);height:rem(120);padding:rem(40);fill:#000;}
+.P.people .mFunc .pic .icon{display:block;width:100%;height:100%;}
+.P.people .mFunc.home .pic{fill:$color_one;}
+.P.people .mFunc.following .pic{fill:#F25500;}
+.P.people .mFunc.buy .pic{fill:#338421;}
+.P.people .mFunc.like .pic{fill:#E60000;}
+.P.people .mFunc.view .pic{fill:#AAD010;}
+.P.people .mFunc.point .pic{fill:#008B8B;}
+.P.people .mFunc.wallet .pic{fill:#D9A213;}
+.P.people .mFunc.info .pic{fill:#9400D3;}
+.P.people .mFunc .name{padding-left:rem(120);font-size:rem(30);}
+.P.people .mFunc.home .name:before{content:"我的主页";}
+.P.people .mFunc.buy .name:before{content:"我购买的";}
+.P.people .mFunc.like .name:before{content:"我喜欢的";}
+.P.people .mFunc.view .name:before{content:"我看过的";}
+.P.people .mFunc.view .pic{padding:rem(25);}
+.P.people .mFunc.following .name:before{content:"我关注的";}
+.P.people .mFunc.follower .name:before{content:"关注我的";}
+.P.people .mFunc.info .name:before{content:"我的资料";}
+.P.people .mFunc.point .name:before{content:"我的积分";}
+.P.people .mFunc.wallet .name:before{content:"我的钱包";}
+.P.people .mFunc .to{position:absolute;top:0;left:0;width:100%;height:100%;padding-left:rem(20);font-size:rem(14);}
+.P.people .mFunc .to .icon{position:absolute;top:0;left:auto;right:0;width:rem(120);height:rem(120);padding:rem(50);fill:#999;transform:rotate(90deg);}
+
+.P.people .mFunc .value{position:absolute;top:0;right:0;width:rem(400);height:rem(120);line-height:rem(120);padding-right:rem(100);color:#999;font-size:rem(30);display:flex;align-items:center;justify-content:flex-end;}
+.P.people .mFunc .value:after{font-size:rem(20);margin-left:rem(10);}
+.P.people .func .panel.action .mFunc .value:after{content:"个内容";}
+
+.P.people .mFunc .update{position:absolute;top:rem(35);right:rem(100);min-width:rem(50);height:rem(50);padding:0 rem(15);color:#FFF;text-align:center;font-size:rem(30);border-radius:rem(50);background:$color_red;@extend %center_flex;}
+
+.P.people .mFunc.wallet .value:after{content:"云崖币";}
+.P.people .mFunc.point .value:after{content:"积分";}
+// .P.people .mFunc.point .to .icon,.P.people .mFunc.wallet .to .icon{display:none;}
+
+// .P.people .func .panel.home{display:none;}
+
+
+.P.people .cH{padding:0;}
+.P.people .cH{display:flex;justify-content:flex-start;align-items:center;height:rem(60);padding-left:rem(10);background-color:rgba(245,245,245,.5);}
+.P.people .cH .txt{position:relative;height:rem(30);margin:0;padding-left:rem(5);font-size:rem(20);}
+.P.people.content .collect .cH .txt:after{content:"我喜欢的";}
+.P.people.content .buy .cH .txt:after{content:"我购买的";}
+.P.people.content .view .cH .txt:after{content:"我看过的";}
+.P.people .profile .cH .txt:after{content:"我的资料";}
+// .P.people.content .collect .cH .icon{position:absolute;top:0;left:0;width:rem(30);height:rem(30);}
+
+.P.people.content .U,.P.people.setting .U{padding-top:rem(60);}
+
+.P.people.content .price{display:none;}
+
+.P.people.setting .point .cH .txt:after{content:"我的积分"}
+.P.people.setting .purchase .cH .txt:after{content:"我的云崖币"}
+.P.people.setting .summary{width:rem(280);height:rem(120);margin:0 auto;box-shadow:0 0 rem(30) #EEE;background:#FFF;@extend %center_flex;font-size:rem(50);}
+.P.people.setting .summary .n{font-size:rem(40);text-align:center;}
+.P.people.setting .point .summary .n:after{display:block;width:100%;text-align:center;font-size:rem(14);}
+.P.people.setting .point .summary .n.lv1:after{content:"（秀才）";}
+.P.people.setting .point .summary .n.lv2:after{content:"（举人）";}
+.P.people.setting .point .summary .n.lv3:after{content:"（贡士）";}
+.P.people.setting .point .summary .n.lv4:after{content:"（进士）";}
+
+.P.people.setting .record .mlist{padding:rem(20) 0 !important;}
+.P.people.setting .mRecord{position:relative;padding:0 rem(20);border-bottom:1px solid #DDD;}
+.P.people.setting .mRecord.th{display:none;}
+.P.people.setting .mRecord .n{display:none;}
+.P.people.setting .mRecord .tr{height:rem(70);}
+.P.people.setting .mRecord .desc{display:block;width:rem(240);margin-bottom:rem(20);padding:0;font-size:rem(14);line-height:rem(48);@extend %text_overflow;}
+.P.people.setting .mRecord .time{position:absolute;top:rem(25);left:rem(20);right:auto;width:rem(150);padding:0;color:#999;}
+.P.people.setting .mRecord .value{position:absolute;top:0;right:0;width:rem(100);height:rem(50);padding-right:rem(20);justify-content:flex-end;font-size:rem(14);}
+
+// body{background: $color_cyan_light;}
+.P.home.people{background:#FFF;}
+
+.mPanel.people .mPeople{position:relative;border-bottom:rem(20) solid #F5F5F5;}
+.mPanel.people .mPeople:before{content:"";position:absolute;z-index:1;top:rem(502);left:0;width:100%;height:rem(50);border-top-left-radius:rem(50);border-top-right-radius:rem(50);background:#FFF;}
+.mPanel.people .mPeople .pic.cover{height:rem(550);background-color:#333;background-size:cover;background-position:center;background-image:url('https://oss-yunya.com/cover/idNwKsRbcUPB7VdoKjRuYBor.jpg')}
+.mPanel.people .mPeople .pic.logo{position:absolute;top:rem(230);left:50%;width:rem(160);height:rem(160);margin-left:rem(-80);border-radius:rem(100);border:rem(10) solid rgba(#FFF,.5);background-size:cover;background-clip:padding-box;}
+.mPanel.people .mPeople .name{position:absolute;top:rem(432);left:0;width:100%;padding:0 rem(80);text-align:center;color:#FFF;font-size:rem(80);font-weight:400;line-height:1;@extend %text_overflow2;@extend %center_flex;-webkit-line-clamp:1;}
+.mPanel.people .mPeople .name.s{top:rem(450);font-size:rem(60);}
+.mPanel.people .mPeople .slogan{position:relative;margin-bottom:rem(30);font-size:rem(30);font-style:italic;color:#999;line-height:2;@extend %center_flex;}
+.mPanel.people .mPeople .summary{position:relative;font-size:rem(30);margin-bottom:rem(50);padding:rem(0) rem(50) 0;line-height:2;color:#333;@extend %text_overflow2;-webkit-line-clamp:2;}
+.mPanel.people .mPeople .summary.c{display:block;}
+
+// .mPanel.people .mPeople .pic.cover{background: $color_cyan_light;}
+// .teacher .mPanel.people .mPeople .pic.cover{background-image:url('https://oss-yunya.com/cover/id6WPX7MhZXDoHYXke4bNWVE.jpg')}
+
+.me .mPanel.people .mPeople .pic.logo:after,
+.me .mPanel.people .mPeople .slogan:after,
+.me .mPanel.people .mPeople .summary.c:after,
+.teacher .mPanel.people .mPeople .pic.logo:after
+{content:"编辑";margin-left:rem(20);padding:rem(5) rem(10);font-size:rem(16);font-style:normal;color:$color_blue;border-radius:rem(5);border:rem(1) solid $color_blue;@extend %center_flex;}
+.me .mPanel.people .mPeople .pic.logo:after{position:absolute;bottom:rem(-10);right:rem(-10);background:rgba(#FFF,.75)}
+.me .mPanel.people .mPeople .summary.c:after{display:block;margin:rem(20) auto 0;text-align:center;}
+// .teacher .mPanel.people .mPeople .name:after{content:"老师";position:relative;top:rem(-20);margin-left:rem(10);color:#FFF;font-size:rem(20);border:0;background:$color_red;}
+.guest.teacher .mPanel.people .mPeople .pic.logo:after{content:"老师";position:absolute;bottom:rem(-10);right:rem(-10);color:#FFF;border:0;background:rgba($color_red,.85);}
+
+.mPanel.people .mo{width:100%;padding-top:rem(30);padding-bottom:rem(50);display:flex;flex-wrap:wrap;align-items:center;justify-content:center;}
+.mPanel.people .mo .apc-btn{position:relative;@extend %center_flex;height:rem(60);padding:rem(5) rem(20);font-size:rem(24);}
+.mPanel.people .mo .apc-btn .txt:before{display:block;}
+.mPanel.people .mo .apc-btn .icon{display:block;width:rem(50);height:rem(50);padding:rem(10);}
+.mPanel.people .mo .follow{width:rem(250);color:#FFF;fill:#FFF;border-top-left-radius:rem(100);border-bottom-left-radius:rem(100);border-radius:rem(100);background:$color_one;}
+.mPanel.people .mo .follow .txt:before{content:"关注";font-size:rem(30);padding-right:rem(20);}
+.mPanel.people .mo .share{margin-left:rem(50);color:#999;fill:#999;border-top-right-radius:rem(100);border-bottom-right-radius:rem(100);border-radius:rem(100);background:#F5F5F5;}
+.mPanel.people .mo .share .txt:before{content:"分享";}
+.mPanel.people .mo .opinion{visibility:hidden;margin-right:rem(50);color:#999;fill:#999;border-top-right-radius:rem(100);border-bottom-right-radius:rem(100);border-radius:rem(100);background:#F5F5F5;}
+.mPanel.people .mo .opinion .txt:before{content:"留言";}
+.mPanel.people .mo .n{position:absolute;top:rem(-15);right:rem(-10);height:rem(30);padding:rem(4) rem(10);font-size:rem(14);color:#000;border-radius:rem(40);border:rem(3) solid #FFF;background:rgba($color_one,1);}
+.mPanel.people .mo .follow .n{color:#FFF;background:$color_one;}
+.mPanel.people .mo .share .n{color:#999;background:#f5f5f5;}
+.mPanel.people .mo .opinion .n{color:#999;background:#f5f5f5;}
+.mPanel.people .mo .follow.c{background:$color_green_light;}
+.mPanel.people .mo .follow.c .n{background:$color_green_light;}
+.mPanel.people .mo .follow.c .txt:before{content:"已关注";}
+
+.guest.teacher .mPanel.people .mo:after{content:"关注老师，第一时间获取最新课程信息";position:relative;width:100%;padding:rem(30) 0 0;@extend %center_flex;color:#999;font-size:rem(20);letter-spacing:rem(2);}
+
+.me .mPanel.people .mo .follow{display:none;}
+
+// .P.home.people .mPanel.org{border:0;}
+// .mPanel.people .mPeople{position:relative;padding-top:rem(100);background:#FFF;}
+// .mPanel.people .mPeople .pic.logo{position:absolute;top:rem(-50);left:rem(50);width:rem(150);height:rem(150);border:rem(10) solid #FFF;border-radius:rem(150);background-color:#FFF;}
+// .mPanel.people .mPeople .pic.logo:before{content:"";position:absolute;top:rem(40);left:50%;width:rem(400);height:rem(200);transform:translate(-50%,0);background:#FFF;}
+// .mPanel.people .mPeople .pic.logo .icon{display:block;position:relative;z-index:1;width:100%;height:100%;border-radius:rem(100);background-size:90%;background-color:$color_one;}
+// .mPanel.people .mPeople .name{position:relative;z-index:1;text-align:center;font-size:rem(50);line-height:2;}
+// .mPanel.people .mPeople .slogan{text-align:center;color:#999;font-size:rem(30);}
+// .mPanel.people .mPeople .mo{position:absolute;top:0;right:0;width:rem(400);height:rem(100);padding-bottom:rem(10);padding-right:rem(20);display:flex;align-items:flex-end;justify-content:flex-end;}
+// .mPanel.people .mPeople .mo .btn{position:relative;@extend %center_flex;height:rem(60);padding:rem(5) rem(20);}
+// .mPanel.people .mPeople .mo .btn .txt:before{display:block;}
+// .mPanel.people .mPeople .mo .btn .icon{display:block;width:rem(50);height:rem(50);padding:rem(10);}
+// .mPanel.people .mPeople .mo .follow{width:rem(200);color:#FFF;fill:#FFF;border-top-left-radius:rem(100);border-bottom-left-radius:rem(100);border-radius:rem(100);background:$color_one;}
+// .mPanel.people .mPeople .mo .follow .txt:before{content:"关注";font-size:rem(30);}
+// .mPanel.people .mPeople .mo .share{margin-left:rem(20);color:#999;fill:#999;border-top-right-radius:rem(100);border-bottom-right-radius:rem(100);border-radius:rem(100);background:#F5F5F5;}
+// .mPanel.people .mPeople .mo .share .txt:before{content:"分享";}
+// .mPanel.people .mPeople .mo .n{position:absolute;top:rem(-15);right:rem(-10);height:rem(30);padding:rem(4) rem(10);font-size:rem(14);color:#000;border-radius:rem(40);border:rem(3) solid #FFF;background:rgba($color_one,1);}
+// .mPanel.people .mPeople .mo .follow .n{color:#FFF;background:$color_one;}
+// .mPanel.people .mPeople .mo .share .n{color:#999;background:#f5f5f5;}
+// .mPanel.people .mPeople .stats{overflow:auto;display:flex;flex-wrap:nowrap;align-items:center;height:rem(200);margin:rem(50) 0 0;border-top:rem(1) solid #EEE;background:#FFF;}
+// .mPanel.people .mPeople .stats .item{position:relative;height:rem(160);padding:0 rem(60);@extend %center_flex;}
+// .mPanel.people .mPeople .stats .item:before{content:"";position:absolute;top:rem(10);left:0;width:100%;text-align:center;color:#999;font-size:rem(20);}
+// .mPanel.people .mPeople .stats .item:after{content:"";position:absolute;top:0;right:0;width:rem(2);height:100%;background:linear-gradient(top,rgba(#FFF,0),rgba(#DDD,1) 50%,rgba(#FFF,0));}
+// .mPanel.people .mPeople .stats .item .n{font-size:rem(50);white-space:nowrap}
+// .mPanel.people .mPeople .stats .item .n:after{padding-left:rem(10);color:#999;font-size:rem(20);}
+// .mPanel.people .mPeople .stats .item.update:before{content:"最近更新";}
+// .mPanel.people .mPeople .stats .item.series:before{content:"系列课";}
+// .mPanel.people .mPeople .stats .item.series .n:after{content:"课";}
+// .mPanel.people .mPeople .stats .item.live:before{content:"直播课";}
+// .mPanel.people .mPeople .stats .item.live .n:after{content:"场";}
+// .mPanel.people .mPeople .stats .item.video:before{content:"视频课";}
+// .mPanel.people .mPeople .stats .item.video .n:after{content:"个";}
+// .mPanel.people .mPeople .stats .item.article:before{content:"资讯";}
+// .mPanel.people .mPeople .stats .item.article .n:after{content:"篇";}
+// .mPanel.people .mPeople .stats .item.follower:before{content:"订阅者";}
+// .mPanel.people .mPeople .stats .item.pv:before{content:"访问量";}

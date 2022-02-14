@@ -1,0 +1,29 @@
+{
+  "name": "webos",
+  "version": "6.0.0",
+  "description": "webOS微服务",
+  "main": "main.js",
+  "author": "yunya",
+  "scripts": {
+    "dev": "node build/dev.js",
+    "build": "node build/build.js"
+  },
+  "devDependencies": {
+    "vue-loader": "^15.7.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "dependencies": {
+    "vue": "^2.6.10"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "last 10 Chrome versions",
+    "Safari >= 6",
+    "ie> 8",
+    "iOS >= 8",
+    "Firefox >= 50",
+    "Android > 4.4"
+  ]
+}

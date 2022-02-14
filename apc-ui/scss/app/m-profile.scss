@@ -1,0 +1,24 @@
+
+@import "../apc-ui/variable.scss";
+
+.M.profile{background:rgba(#000,.5)}
+.M.profile.set.slogan .B{height:rem(600);}
+.M.profile.set.summary .B{height:rem(600);}
+.M.profile.set .L{min-height:initial;}
+
+// .M.profile.set.slogan .form .label{top:rem(-200);height:rem(200);font-size:rem(30);@extend %center_flex;}
+// .M.profile.set.slogan .form .label:before{content:"设置签名（最多20字）";}
+
+.M.profile.set.slogan .form .ph{width:100%;text-align:center;font-size:rem(30)}
+.M.profile.set.slogan .form .ph:before{content:"设置签名（最多20字）";}
+.M.profile.set.slogan .apc-input{width:auto;height:rem(100);margin:rem(200) rem(50) rem(30);border:0;}
+.M.profile.set.slogan .apc-input .text{height:rem(100);padding:rem(30) 0;font-size:rem(30);text-align:center;}
+
+.M.profile.set.summary .form .ph{top:rem(50);width:100%;padding-left:rem(50);font-size:rem(30)}
+.M.profile.set.summary .form .ph:before{content:"设置简介（最多500字）";}
+.M.profile.set.summary .apc-textarea{width:auto;height:rem(500);margin:0;border:0;}
+.M.profile.set.summary .apc-textarea .text{padding:rem(50);font-size:rem(30);}
+
+.M.confirm .o .submit{position:absolute;bottom:rem(70);left:rem(50);width:rem(650);height:rem(80);border-radius:rem(80);color:#FFF;font-size:rem(30);background:$color_blue;}
+.M.confirm .o .submit.d{color:#CCC;background:#F5F5F5;}
+.M.confirm .o .cancel{display:none;}

@@ -1,0 +1,40 @@
+﻿
+@import "variable";
+
+/*apc-video*/
+.apc-video{position: relative;background-color:#000;background-repeat:no-repeat;background-size:100% auto;}
+.apc-video.trial:before{content:"正在试播....";position:absolute;z-index:1;top:rem(175);left:50%;width:auto;height:rem(50);padding:rem(10) rem(20);color:#FFF;font-size:rem(30);border-radius:rem(10);background:rgba($color_red,.75);transform:translate(-50%,0);@extend %center_flex;}
+.apc-video .video,.apc-video .prism-player{position:relative;width:100% !important;height:rem(420) !important;}
+
+.apc-video .lock{overflow:hidden;position:absolute;z-index:111;top:rem(420);left:0;width:100%;height:0;padding:0;background:#FFF;@extend %center_flex;transition:all .4s;}
+// .apc-video .lock:before{content:"";position:absolute;z-index:-1;left:rem(75);bottom:rem(25);width:rem(600);height:rem(80);padding:0;border-radius:rem(10);background:#F5F5F5;}
+.apc-video .lock .cd,.apc-video .lock .end{width:rem(650);height:rem(80);font-size:rem(30);border-radius:rem(10);background:#F5F5F5;@extend %center_flex;}
+.apc-video .lock .cd .n:after{content:" 开始";}
+
+.P.content.live .L{transition:padding .4s;}
+.CD .pH,.END .pH{height:rem(550) !important;}
+.CD .apc-video,.END .apc-video{height:rem(550) !important;}
+.CD .apc-video .lock,.END .apc-video .lock{height:rem(130);}
+.CD .L,.END .L{padding-top:rem(550) !important;}
+
+.apc-video .cd .n,.apc-video .cd .live{font-size:rem(30);color:#FF7F00;}
+
+.apc-video .end .txt:before{content:"直播已结束，请等待回放";font-size:rem(30);color:#999;}
+
+.prism-player{background:none !important;}
+.prism-controlbar{height:auto !important;}
+.prism-controlbar-bg{height:rem(100) !important;display:block;background:rgba(0,0,0,.3) !important;}
+.prism-progress{top:auto !important;bottom:0 !important;}
+.prism-play-btn{width:rem(100) !important;height:rem(100) !important;margin:0 !important;background:url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iQVZQbGF5IiBmaWxsPSIjRkZGIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI+PHBhdGggZD0iTTQwLjIsMjRMNy44LDQyLjlWNS4xTDQwLjIsMjR6Ij48L3BhdGg+PC9zdmc+DQo=) center center no-repeat !important;background-size:50% !important;}
+.prism-play-btn.playing{background-image:url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iQVZQYXVzZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNDggNDgiPjxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0yNy45LDQyLjZWNS40aDkuNHYzNy4zSDI3LjlMMjcuOSw0Mi42eiBNMTAuNyw0Mi42aDkuNFY1LjRoLTkuNFY0Mi42TDEwLjcsNDIuNnoiPjwvcGF0aD48L3N2Zz4NCg==) !important}
+.prism-fullscreen-btn{width:rem(100) !important;height:rem(100) !important;margin:0 !important;background:url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iQVZGdWxsIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MCA1MCI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTQ5LjUsMzkuMmgtNDlDMC4yLDM5LjIsMCwzOSwwLDM4LjdWMTEuM2MwLTAuMywwLjItMC41LDAuNS0wLjVoNDljMC4zLDAsMC41LDAuMiwwLjUsMC41djI3LjVDNTAsMzksNDkuOCwzOS4yLDQ5LjUsMzkuMnpNMSwzOC4yaDQ4VjExLjhIMVYzOC4yeiBNNDYuNiwyNHYtOS44aC05LjhMNDYuNiwyNHogTTMuNCwyNnY5LjhoOS44TDMuNCwyNnoiLz48L3N2Zz4NCg==) center center no-repeat !important;background-size:60% !important;}
+.prism-time-display{opacity:.5;position:absolute;bottom:rem(0);left:50%;height:rem(40) !important;margin:0 !important;color:#EEE !important;line-height:rem(40) !important;transform:translate(-50%,0);}
+.prism-player .prism-snapshot-btn{display:none;}
+.time-bound{padding:0 rem(4)}
+
+.prism-volume,.prism-stream-selector,.prism-speed-selector{display:none !important;}
+.prism-cover{overflow:hidden;width:100%;height:100%;border-radius:rem(3);background-size:cover;background-position:center;background-repeat:no-repeat;background-color:#FFF !important;}
+
+.prism-big-play-btn{position:absolute;top:0;left:0;width:rem(750);height:rem(421);@extend %center_flex;}
+.prism-big-play-btn .icon{display:block;width:rem(120);height:rem(120);padding:rem(20) rem(12) rem(20) rem(28);border:rem(4) solid #FFF;border-radius:rem(100);fill:#FFF;background:rgba(#000,.1);}
+

@@ -1,0 +1,219 @@
+
+@import "../apc-ui/variable.scss";
+
+.M.pay .B{top:0 !important;left:0 !important;width:100%;height:rem(1000);margin:0;background:#FFF;}
+
+
+
+.M.pay .C.pay .coin{width:100%;height:rem(160);font-size:rem(80);@extend %center_flex;}
+// .M.pay .C.pay .coin:before{content:"￥";position:relative;top:rem(10);font-size:rem(50);margin-right:rem(10);}
+// .M.pay .C.pay .coin:after{content:"币";position:relative;top:rem(15);margin-left:rem(20);font-size:rem(30);}
+.M.pay .mItem{position:relative;width:rem(650);height:rem(130);margin:rem(50) auto 0;padding:0 rem(20) 0 rem(200);border:1px solid #EEE;border-radius:rem(3);@extend %center_flex;background:#FFF;}
+.M.pay .mItem:before{content:"正在购买";position:absolute;top:rem(-50);left:0;color:#999;}
+.M.pay .mItem .icon{position:absolute;top:rem(20);left:rem(20);width:rem(160);height:rem(90);border-radius:rem(5);background-color:#DDD;background-size:cover;background-position:center;}
+.M.pay .mItem .txt{font-size:rem(30);line-height:1.5;}
+.M.pay .policy{margin:rem(20) rem(50);padding:rem(0);line-height:2;color:#999;}
+.M.pay .mo{position:absolute;bottom:0;left:0;width:100%;}
+.M.pay .mo .apc-btn.pay{height:rem(150);margin-bottom:rem(30);padding-bottom:rem(30);font-size:rem(50)}
+.M.pay .mo .apc-btn.pay.vip{position:absolute;bottom:rem(10);right:rem(10);height:rem(40);margin:0;padding:0 rem(15);font-size:rem(18);letter-spacing:rem(1)}
+.M.pay .mo .pay.course:before{content:"立即购买";padding-bottom:rem(10);}
+.M.pay .mo .pay.course .n{position:absolute;bottom:rem(20);left:0;width:100%;text-align:center;color:#CCC;letter-spacing:0;}
+.M.pay .mo .pay.course .n:before{content:"你的账户余额为 ";}
+.M.pay .mo .pay.course .n:after{content:" 云崖币";}
+.M.pay .mo .pay.vip:before{content:"购买会员卡"}
+.M.pay .mo .pay.course.d{color:#E60000;font-size:rem(40);}
+.M.pay .mo .pay.course.d:before{content:"余额不足，点击充值"}
+.M.pay .mo .back{width:rem(60);height:rem(60);}
+.M.pay .mo .back .icon{position:relative;left:rem(-3);transform:rotate(-90deg)}
+
+.M.pay .mo .qrcode{display:block;height:rem(200);text-align:center;background:red;}
+.M.pay .mo .qrcode .qr{display:inline-block;width:rem(150);height:rem(150);margin:0 rem(10);background:black;}
+.M.pay .mo .remain{position:absolute;bottom:0;left:0;width:100%;height:rem(80);color:#999;text-align:center;line-height:rem(80);letter-spacing:rem(1)}
+.M.pay .mo .remain:before{content:"你的账户余额为";margin-right:rem(5);}
+.M.pay .mo .remain:after{content:"云崖币";margin-left:rem(5);}
+.M.pay .mo .remain .n{position:relative;top:rem(.5);font-size:rem(24)}
+.M.pay .mo .remain .icon{display:none;position:absolute;top:rem(5);right:rem(5);width:rem(40);height:rem(40);padding:rem(13);fill:#333;transform:rotate(90deg);}
+// .M.pay .mo .remain.c{padding-left:rem(20);text-align:left;}
+// .M.pay .mo .remain.c .icon{display:block;}
+// .M.pay .mo .remain.c:after{content:"充值";position:absolute;top:rem(20);right:rem(40);height:auto;line-height:1;}
+
+.M.pay .payDetail{margin:rem(50);border-top:rem(1) solid #EEE;}
+.M.pay .payDetail .mData{display:flex;height:rem(100);border-bottom:rem(1) solid #EEE;}
+.M.pay .payDetail .mData.coin .name:before{content:"你的云崖币余额"}
+.M.pay .payDetail .mData .value{}
+
+.M.pay .mo .viplist{display:flex;justify-content:flex-end;align-items:center;position:relative;width:100%;height:rem(50);padding-right:rem(10);color:#333;text-align:center;background:#F5F5F5;line-height:rem(50);letter-spacing:rem(1);}
+.M.pay .mo .viplist .txt{position:absolute;top:50%;left:rem(15);font-size:rem(14);transform:translate(0,-50%)}
+.M.pay .mo .viplist .txt:before{content:"购买会员卡";margin-right:rem(5);}
+.M.pay .mo .viplist .icon{display:block;width:rem(40);height:rem(20);margin-right:rem(5);background-size:cover;background-position:center;}
+// .M.pay .mo .remain.c{padding-left:rem(20);text-align:left;}
+// .M.pay .mo .remain.c .icon{display:block;}
+// .M.pay .mo .remain.c:after{content:"充值";position:absolute;top:rem(20);right:rem(40);height:auto;line-height:1;}
+
+.M.pay .recharge .remain{height:rem(160);color:#000;font-size:rem(40);@extend %center_flex;line-height:rem(60);letter-spacing:rem(1);}
+.M.pay .recharge .remain:before{content:"你的账户余额为";margin-right:rem(5)}
+.M.pay .recharge .remain:after{content:"云崖币";margin-left:rem(5);}
+.M.pay .recharge .remain .n{position:relative;top:rem(1);font-size:rem(40)}
+.M.pay .recharge .remain .add{font-size:rem(40);color:#FF7F00;}
+.M.pay .recharge .coin{width:rem(640);margin:0 auto;display:flex;flex-wrap:wrap;}
+.M.pay .recharge .coin .item{position:relative;width:rem(300);height:rem(130);margin:rem(10);border-radius:rem(10);border:1px solid #EEE;@extend %center_flex;}
+.M.pay .recharge .coin .n{margin-bottom:rem(30);color:#000;font-size:rem(50);}
+// .M.pay .recharge .coin:after{content:"请选择要充值的金额";width:100%;height:rem(30);line-height:rem(30);color:#999;text-align:center;}
+
+.M.pay .recharge .coin .n:before{font-size:rem(30);}
+// .M.pay .recharge .coin .c1 .n:before{content:"1"}
+// .M.pay .recharge .coin .c5 .n:before{content:"5"}
+// .M.pay .recharge .coin .c10 .n:before{content:"10"}
+// .M.pay .recharge .coin .c20 .n:before{content:"20"}
+// .M.pay .recharge .coin .c30 .n:before{content:"30"}
+// .M.pay .recharge .coin .c50 .n:before{content:"50"}
+// .M.pay .recharge .coin .c100 .n:before{content:"100"}
+// .M.pay .recharge .coin .c200 .n:before{content:"200"}
+.M.pay .recharge .coin .n:after{content:"RMB";position:relative;margin-left:rem(5);font-size:rem(24)}
+.M.pay .recharge .coin .txt{position:absolute;bottom:rem(15);width:100%;text-align:center;color:#999;}
+.M.pay .recharge .coin .txt:before{content:"可充值 ";}
+.M.pay .recharge .coin .txt:after{content:" 云崖币";}
+// .M.pay .recharge .coin .c5 .txt:before{content:"可充值 5 云崖币";}
+// .M.pay .recharge .coin .c10 .txt:before{content:"可充值 10 云崖币";}
+// .M.pay .recharge .coin .c20 .txt:before{content:"可充值 20 云崖币";}
+// .M.pay .recharge .coin .c30 .txt:before{content:"可充值 30 云崖币";}
+// .M.pay .recharge .coin .c50 .txt:before{content:"可充值 50 云崖币";}
+// .M.pay .recharge .coin .c100 .txt:before{content:"可充值 100 云崖币";}
+// .M.pay .recharge .coin .c200 .txt:before{content:"可充值 200 云崖币";}
+.M.pay .recharge .coin .item.c{color:#FFF;border-color:transparent;background:#FF7F00;}
+.M.pay .recharge .coin .item.c .txt{color:rgba(#FFF,.5)}
+.M.pay .recharge .coin .item.c .n{color:#FFF;}
+
+//   .M.pay .recharge .coin:after{content:"请选择充值金额" !important;margin-top:rem(50);}
+.M.pay .recharge .pay{position:relative;}
+.M.pay .pay .apc-btn.alipay,
+.M.pay .pay .apc-btn.wechat
+{position:relative;width:rem(640);height:rem(90);margin:rem(30) auto;border-radius:rem(100);@extend %center_flex;}
+.M.pay .pay .apc-btn.alipay{background:$color_alipay;}
+.M.pay .pay .apc-btn.wechat{background:$color_wechat;}
+.M.pay .pay .apc-btn .icon{display:none;position:relative;top:rem(3);left:rem(3);width:rem(26);height:rem(26);margin-right:rem(5);padding:0;}
+.M.pay .pay .apc-btn:after{font-size:rem(32);letter-spacing:rem(1);color:#FFF;}
+.M.pay .pay .apc-btn.alipay:after{content:"使用支付宝支付";}
+.M.pay .pay .apc-btn.wechat:after{content:"使用微信支付";}
+.M.pay .pay .apc-btn:active{color:#FFF;}
+.M.pay .pay .apc-btn:active:after{color:#FFF;}
+.M.pay .pay .apc-btn:active path{fill:#FFF;}
+.M.pay .pay .apc-btn.alipay:active{background:$color_alipay;}
+.M.pay .pay .apc-btn.wechat:active{background:$color_wechat;}
+// .M.pay .recharge .pay .apc-btn.d{opacity:.75;filter:grayscale(100%);}
+// .M.pay .recharge .pay .apc-btn.d:active{opacity:.75;filter:grayscale(100%);}
+.M.pay .recharge .pay .apc-btn.d path{fill:#CCC;}
+.M.pay .recharge .pay .apc-btn.d:after{color:#CCC;}
+.M.pay .recharge .pay .apc-btn.d:active{background:#FFF;}
+// .M.pay .recharge .pay .apc-btn.wechat{display:none;}
+.M.pay .recharge .pay .apc-btn.back{width:rem(150);height:rem(50);}
+.M.pay .recharge .pay .apc-btn.back:after{content:"< 返回";font-size:rem(30);color:#999;}
+
+.M.pay .qrcode .L{@extend %center_flex;}
+.M.pay .qrcode .qr .tip{font-size:rem(18);letter-spacing:rem(2);}
+.M.pay .qrcode .qr .tip:after{content:"人民币";padding-left:rem(2)}
+.M.pay .qrcode .qr.alipay .tip{color:#1E95D4}
+.M.pay .qrcode .qr.wechat .tip{color:#B2E34B}
+.M.pay .qrcode .qr.alipay .tip:before{content:"请使用支付宝扫码支付";padding-right:rem(5)}
+.M.pay .qrcode .qr.wechat .tip:before{content:"请使用微信扫码支付";padding-right:rem(5)}
+.M.pay .qrcode .qr .code{width:rem(200);height:rem(200);margin:rem(30) auto rem(60);background:red;@extend %center_flex;}
+.M.pay .qrcode .qr .icon{display:block;width:rem(50);height:rem(50);padding:rem(10);border-radius:rem(50);background:#FFF;}
+
+.M.pay .recharge .mo{min-height:rem(60);}
+// .M.pay .recharge .back:before{content:"返回课程";}
+.M.pay .qrcode .mo{min-height:rem(60)}
+.M.pay .qrcode .back:before{content:"返回";}
+
+.M.pay.bind .B{height:rem(200);}
+.M.pay.bind .form{padding:rem(20);}
+.M.pay.bind .form .apc-input{width:rem(320);}
+.M.pay.bind .form .apc-input .text{font-size:rem(30);text-align:center;}
+.M.pay.bind .mo{min-height:rem(60);}
+.M.pay.bind .mo .next:before{content:"下一步"}
+
+.M.pay .C.result.waiting .L{@extend %center_flex;}
+.M.pay .C.result .L{@extend %center_flex;}
+.M.pay .C.result .panel{display:block;width:rem(500);height:auto;}
+.M.pay .C.result .panel .icon{display:block;width:rem(200);height:rem(200);margin:0 auto;border-radius:rem(200);border:1px solid $color_green;fill:$color_green;}
+.M.pay .C.result .panel .txt:before{display:block;text-align:center;margin:rem(30) auto;font-size:rem(40);letter-spacing:rem(2);color:$color_green;}
+.M.pay .C.result.pay .success .txt:before{content:"购买成功";}
+.M.pay .C.result.recharge .success .txt:before{content:"充值成功";}
+.M.pay .C.result.wait .wait .txt:before{content:"充值处理中，请稍候"}
+.M.pay .C.result.wait .wait .icon{padding:rem(20);border:0;}
+.M.pay .C.result.wait .wait .txt:before{color:#FF7F00}
+.M.pay .C.result.wait .wait path{fill:#CCC;}
+.M.pay .C.result.wait .wait .cancel:before{content:"取消返回";color:#999;font-size:rem(16);letter-spacing:rem(2)}
+
+
+
+.price.flex{flex-direction:column;width:rem(600);height:rem(300);margin:rem(50) auto;}
+.price.flex .panel{cursor:pointer;height:50%;margin:rem(10);border:1px solid transparent;background:#F5F5F5;}
+.price.flex .panel .item{color:#CCC;font-size:rem(40)}
+.price.flex .panel .item .price .text{color:$color_one;}
+.price.flex .panel .item .discount .text{color:$color_green;}
+.price.flex .panel .apc-input{height:rem(40)}
+.price.flex .panel.set .course{position:absolute;top:0;left:0;width:100%;height:100%;font-size:rem(40);color:#CCC;@extend %center_flex;}
+.price.flex .panel.set .course .txt:before{content:"定价";font-size:rem(40);line-height:2;}
+.price.flex .panel.section{display:none;}
+.price.flex .panel.set .section{position:absolute;top:0;left:0;width:100%;height:100%;font-size:rem(30);color:#CCC;@extend %center_flex;}
+.price.flex .panel.set .section .txt:before{content:"按课时定价";font-size:rem(24);line-height:2;}
+.price.flex .panel.set .section .txt:after{display:block;content:"为每个课时单独定价"}
+.price.flex .panel.set.c .section .txt:before{color:$color_green;}
+.price.flex .panel.set.c .section .txt:after{color:#666;}
+.series .price.flex{height:rem(450);}
+.series .price.flex .panel.set .course .txt:before{content:"按课程定价";font-size:rem(24)}
+.series .price.flex .panel.set .course .txt:after{display:block;content:"用户购买课程，所有课时可用";}
+.series .price.flex .panel.section{display:block;}
+.price.flex .panel.set .apc-input{display:none;width:rem(100);}
+.price.flex .panel.set .apc-input .ph{top:50%;left:50%;transform:translate(-50%,-50%)}
+.price.flex .panel.set .apc-input input{text-align:center;font-size:rem(30);}
+.price.flex .panel.set .apc-input.bright input{background: #fff;color:#A3D900;}
+.price.flex .panel.set .vip{position:absolute;bottom:0;width:100%;height:rem(30)}
+.price.flex .panel.set .vip .apc-checkbox{width:100%;min-height:rem(30);margin:0;}
+.price.flex .panel.set .vip .apc-checkbox .cb_i{padding-top:rem(5);padding-bottom:rem(5);}
+.price.flex .panel.set .vip label{display:none;}
+.price.flex .panel.c{cursor:default;background:#FFF;border:1px solid #EEE;}
+.price.flex .panel.c .apc-input{display:inline-block;text-align:left;transform:scale(0.7);border-color:#DDD;background:#F5F5F5;}
+.price.flex .panel.c .apc-input.price,.price.flex .panel.c .apc-input.discount{margin:0 rem(30);transform:none;border-color:transparent transparent #DDD;background:#FFF;}
+.price.flex .panel.c .apc-input.rate .text,.price.flex .panel.c .apc-input.reduce .text{color:#999;}
+.price.flex .panel.set.c .course{display:none;}
+.price.flex .panel.free .item{color:#CCC;;@extend %center_flex;}
+.price.flex .panel.free .free .txt:before{color:#CCC;content:"免费";font-size:rem(40)}
+.price.flex .panel.free.c .free .txt:before{color:$color_green;}
+
+.M.profile .price.flex{margin:0 auto;}
+.price.flex .panel.monthly .course .txt:before{content:"月卡定价";}
+.price.flex .panel.monthly.c .course .txt:after{content:"（30天）";}
+.price.flex .panel.seasonal .course .txt:before{content:"季卡定价";}
+.price.flex .panel.seasonal.c .course .txt:before{content:"（90天）";}
+.price.flex .panel.yearly .course .txt:before{content:"年卡定价";}
+.price.flex .panel.yearly.c .course .txt:before{content:"(365天)";}
+.M.profile .price.flex .panel.set.c .course .txt:before{font-size:rem(12)}
+.M.profile .price.flex .panel.set.c .course{display:flex;top:rem(-15);left:50%;width:rem(120);height:rem(30);margin-left:rem(-60);text-align:center;font-size:rem(12);color:#000;background:#FFF;}
+
+.M.profile .price.flex .panel.set.c .del{position:absolute;top:rem(5);right:rem(5);width:rem(20);height:rem(20);border-radius:rem(30);background:#000;fill:#FFF;}
+
+
+  .M.pay .recharge .mo{min-height:rem(50);padding:0 rem(10)}
+
+
+
+  .M.pay.RMB .mPay{height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;}
+  .M.pay.RMB .mPay.analysis .name{display:block;margin:rem(0) 0 rem(10);}
+  .M.pay.RMB .mPay.analysis .name:before{content:"查看错题解析";font-size:rem(20);}
+  .M.pay.RMB .mPay.analysis .summary .n{font-size:rem(14);color:#999;line-height:2;}
+  .M.pay.RMB .mPay.analysis .summary .wrong:before{content:"你答错 ";}
+  .M.pay.RMB .mPay.analysis .summary .wrong:after{content:" 题，";}
+  .M.pay.RMB .mPay.analysis .summary .price:before{content:"查看解析1元 / 题，需支付 ";}
+  .M.pay.RMB .mPay.analysis .summary .price:after{content:" 元";}
+
+  .M.pay.RMB .mPay.analysis .do.wechat{width:rem(160);height:rem(40);margin-top:rem(40);padding:0;letter-spacing:0;color:#FFF;background:-webkit-linear-gradient(to top, #02E36E, #07C160);}
+  .M.pay.RMB .mPay.analysis .do.wechat:before{content:"微信支付 ";}
+  .M.pay.RMB .mPay.analysis .do .coin{padding-left:rem(5);font-size:rem(16);}
+  .M.pay.RMB .mPay.analysis .do .coin:before{content:"￥";}
+
+
+
+
+
+

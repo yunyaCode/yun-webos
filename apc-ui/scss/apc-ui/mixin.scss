@@ -1,0 +1,8 @@
+
+%clearfloat{
+  &:after {content: ""; display: table; clear: both; overflow: hidden; }
+}
+%center_flex{display: flex;justify-content: center;align-items: center;}
+%text_overflow{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+%text_overflow2{word-break:break-all; text-overflow:ellipsis; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:4; overflow:hidden;}
+

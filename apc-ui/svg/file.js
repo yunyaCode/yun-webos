@@ -1,0 +1,1 @@
+export default '<svg class="File" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path d="M8.6,3.2h22.8l9.9,9.9v33.7H8.6V3.2z M40,14.1h-9.5V4.6H10v40.9h30V14.1z M31.8,5.6v7.2H39L31.8,5.6z"/></svg>';

@@ -1,0 +1,1 @@
+export default '<svg class="Arrow" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M48,26.8H11.1l12,12.9l-3.7,3.7L0,24L19.4,4.6l3.7,3.7l-12,12.9H48V26.8z"/></svg>';

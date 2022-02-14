@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>子应用</title>
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+<script>
+  function isDevice(name) {
+    var agent = navigator.userAgent.toLowerCase();
+    switch (name) {
+      case 'Windows':
+        return !!agent.match(/windows nt/i);
+      case 'Mac':
+        return !!agent.match(/macintosh/i);
+      case 'iPhone':
+        return !!agent.match(/iphone/i) || !!agent.match(/iPod/i);
+      case 'iPad':
+        return !!agent.match(/ipad/i);
+      case 'iOS':
+        return !!agent.match(/iphone/i) || !!agent.match(/iPod/i) || !!agent.match(/ipad/i);
+      case 'Android':
+        return !!agent.match(/android/i);
+      case 'oldAndroid':
+        return !!agent.match(/android/i) && (parseInt(agent.substring(31, 34)) < 4.1);
+      case 'wechat':
+        return !!agent.match(/micromessenger/i);
+      case 'Desktop':
+        return !!agent.match(/windows nt/i) || !!agent.match(/macintosh/i) || !!agent.match(/ipad/i);
+      case 'Mobile':
+        return !!agent.match(/iphone/i) || !!agent.match(/iPod/i) || !!agent.match(/android/i) || !!agent.match(
+          /micromessenger/i);
+    }
+  }
+
+  function resize() {
+
+
+    var w = document.body.offsetWidth;
+    var h = document.body.offsetHeight;
+    var fontPC = (w / 1920) * 8;
+    var fontMobile = parseInt((w / 750) * 32 * 1);
+
+    if (isDevice("Mobile")) {
+      $('html').css('font-size', fontMobile + 'px');
+      isDevice("iOS") ? $('body').addClass('iPhone') : ""
+    } else {
+      $('html').css('font-size', fontPC + 'px')
+        .find('body').removeClass('iPhone');
+    }
+  }
+
+</script>
+
+
+<body>
+  <div id="desktop"></div>
+</body>
+</html>

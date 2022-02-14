@@ -1,0 +1,195 @@
+
+@import "../apc-ui/variable.scss";
+
+
+
+.mPanel.stats{overflow:auto;height:rem(160);height:auto;border-bottom:rem(20) solid #F5F5F5;background:#FFF;@extend %clearfloat;}
+.mPanel.stats .item{position:relative;width:33.33%;float:left;height:rem(150);padding:0 rem(50);@extend %center_flex;}
+.mPanel.stats .item:before{content:"";position:absolute;top:rem(30);left:0;width:100%;text-align:center;color:#999;font-size:rem(20);}
+.mPanel.stats .item:after{content:"";position:absolute;top:0;right:0;width:rem(1);height:100%;background:linear-gradient(to top,rgba(#FFF,0),rgba(#DDD,1) 50%,rgba(#FFF,0));}
+.mPanel.stats .item .n{margin-top:rem(40);font-size:rem(40);white-space:nowrap;}
+.mPanel.stats .item .n:after{padding-left:rem(10);color:#999;font-size:rem(20);}
+.mPanel.stats .item .txt{margin-top:rem(40);font-size:rem(32);white-space:nowrap;}
+
+.mPanel.stats .item.update:before{content:"最新更新";}
+.mPanel.stats .item.content:before{content:"学习课程";}
+.mPanel.stats .item.content.do:before{content:"TA学过";}
+.mPanel.stats .item.content .n:after{content:"课";}
+.mPanel.stats .item.dur:before{content:"学习时长";}
+.mPanel.stats .item.dur.do:before{content:"累计学习";}
+.mPanel.stats .item.dur .n:after{content:"分钟";}
+.mPanel.stats .item.org:before{content:"机构";}
+.mPanel.stats .item.student:before{content:"学生";}
+.mPanel.stats .item.student .n:after{content:"人";}
+.mPanel.stats .item.following:before{content:"TA关注";}
+.mPanel.stats .item.following .n:after{content:"人";}
+.mPanel.stats .item.follower:before{content:"关注TA";}
+.mPanel.stats .item.follower .n:after{content:"人";}
+
+.mPanel.stats .item.section:before{content:"课时";}
+.mPanel.stats .item.section .n:after{content:"节";}
+.content .mPanel.stats .item.dur:before{content:"时长";}
+.content .mPanel.stats .item.dur .n:after{content:"分钟";}
+.mPanel.stats .item.test:before{content:"练习";}
+.mPanel.stats .item.test .n:after{content:"题";}
+.mPanel.stats .item.test.wait .n{display:none;}
+.mPanel.stats .item.test.wait .txt:after{content:"即将更新";color:#999;font-size:rem(20);}
+.mPanel.stats .item.file:before{content:"课件";}
+.mPanel.stats .item.file .n:after{content:"个";}
+.mPanel.stats .item.point:before{content:"相关知识";}
+.mPanel.stats .item.point .n:after{content:"篇";}
+.mPanel.stats .item.org:before{content:"机构";}
+.mPanel.stats .item.author:before{content:"老师";}
+.mPanel.stats .item.mate:before{content:"同学";}
+.mPanel.stats .item.mate .n:after{content:"人";}
+.mPanel.stats .item.article:before{content:"文章";}
+.mPanel.stats .item.article .n:after{content:"篇";}
+// .mPanel.stats .item.follower:before{content:"订阅者";}
+.mPanel.stats .item.pv:before{content:"访问量";}
+
+// .people .mPanel.stats{border:0;}
+.teacher .mPanel.stats .item.content:before{content:"课程";}
+.teacher .mPanel.stats .item.dur:before{content:"课程时长";}
+.teacher .mPanel.stats .item.follower:before{content:"关注者";}
+.me .mPanel.stats .item.content.do:before{content:"我学过";}
+.me .mPanel.stats .item.following:before{content:"我关注";}
+.me .mPanel.stats .item.follower:before{content:"关注我";}
+
+// .mPanel.stats{overflow:auto;height:rem(160);height:auto;border-bottom:rem(20) solid #F5F5F5;background:#FFF;@extend %clearfloat;}
+// .mPanel.stats .item{position:relative;width:33.33%;float:left;height:rem(150);padding:0 rem(50);@extend %center_flex;}
+// .mPanel.stats .item:before{content:"";position:absolute;top:rem(30);left:0;width:100%;text-align:center;color:#999;font-size:rem(20);}
+// .mPanel.stats .item:after{content:"";position:absolute;top:0;right:0;width:rem(1);height:100%;background:linear-gradient(top,rgba(#FFF,0),rgba(#DDD,1) 50%,rgba(#FFF,0));}
+// .mPanel.stats .item .n{margin-top:rem(40);font-size:rem(40);white-space:nowrap;}
+// .mPanel.stats .item .n:after{padding-left:rem(10);color:#999;font-size:rem(20);}
+// .mPanel.stats .item .txt{margin-top:rem(40);font-size:rem(32);white-space:nowrap;}
+
+.mPanel.stats .item.series .icon{position:absolute;width:rem(90);height:rem(150);border-radius:rem(10);background:$color_blue;}
+.mPanel.stats .item.series .txt:before{content:"返回课程";position:absolute;top:50%;left:50%;width:rem(70);margin-left:rem(30);font-size:rem(24);color:#FFF;line-height:1.2;letter-spacing:rem(5);white-space:break-spaces;transform:translate(-50%,-50%)}
+
+.mPanel.stats.four .item{clear:none !important;width:25% !important;}
+
+// .mPanel.stats .item.series:before{content:"";}
+.mPanel.stats .item.section.cur:before{content:"当前课时";color:$color_orange_bright;}
+.mPanel.stats .item.section.cur .n{margin-top:rem(40);font-size:rem(40);white-space:nowrap;color:$color_orange_bright;}
+.mPanel.stats .item.section.cur .n:before{content:"第";padding-right:rem(5);font-size:rem(30);}
+.mPanel.stats .item.section.cur .n:after{content:"节";padding-left:rem(5);font-size:rem(30);color:$color_orange_bright;}
+
+// .mPanel.stats .item.org{clear:left;width:33.33%;}
+// .mPanel.stats .item.author{width:33.33%;}
+// .mPanel.stats .item.mate{width:33.33%;}
+
+
+
+.mPanel.mate{margin:0 auto;padding:rem(50);border-bottom:rem(20) solid #F5F5F5;}
+.mPanel.mate .label .n{color:#CCC;}
+.mPanel.mate .label .visitor:after{content:"位访客";padding-left:rem(5)}
+.mPanel.mate .label .follower:before{content:"，";}
+.mPanel.mate .label .follower:after{content:"人关注";padding-left:rem(5);}
+.mPanel.mate .label .student:before{content:"，";}
+.mPanel.mate .label .student:after{content:"位学生";padding-left:rem(5);}
+.mPanel.mate .mlist.user{display:flex;justify-content:flex-start;flex-wrap:wrap;min-width:rem(650);margin-top:rem(20);}
+// .mPanel.mate .mlist.user .mUser{max-width:rem(50);}
+.mPanel.mate .mlist.user .pic{width:rem(80);height:rem(80);border:rem(5) solid #FFF;border-radius:rem(80);background-size:cover;}
+.mPanel.mate .mlist.user .mUser:nth-child(8) .pic{background:url('data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iTW9yZSIgdmlld0JveD0iMCAwIDQ4IDQ4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPiA8cGF0aCBmaWxsPSIjOTk5IiBkPSJNMTMuNSwyNGMwLDEuOS0xLjYsMy41LTMuNSwzLjVsMCwwYy0xLjksMC0zLjUtMS42LTMuNS0zLjVsMCwwYzAtMS45LDEuNi0zLjUsMy41LTMuNWwwLDBDMTEuOSwyMC41LDEzLjUsMjIuMSwxMy41LDI0IEwxMy41LDI0eiBNMjcuNSwyNGMwLTEuOS0xLjYtMy41LTMuNS0zLjVsMCwwYy0xLjksMC0zLjUsMS42LTMuNSwzLjVsMCwwYzAsMS45LDEuNiwzLjUsMy41LDMuNWwwLDBDMjUuOSwyNy41LDI3LjUsMjUuOSwyNy41LDI0IEwyNy41LDI0eiBNNDEuNSwyNGMwLTEuOS0xLjYtMy41LTMuNS0zLjVsMCwwYy0xLjksMC0zLjUsMS42LTMuNSwzLjVsMCwwYzAsMS45LDEuNiwzLjUsMy41LDMuNWwwLDBDMzkuOSwyNy41LDQxLjUsMjUuOSw0MS41LDI0IEw0MS41LDI0eiI+PC9wYXRoPiA8L3N2Zz4K') center no-repeat !important;background-size:70% !important;}
+
+.mPanel.mate{border-bottom:1px solid #F5F5F5;}
+.mPanel.mate .label .user:after{content:"位同学";padding-left:rem(5)}
+.mPanel.mate .label .dur:before{content:"累计学习";padding:0 rem(5) 0 rem(20);}
+.mPanel.mate .label .dur:after{content:"分钟";padding-left:rem(5);}
+
+
+
+// .P.home .C.update .mlist{padding-bottom:rem(150)}
+.mPanel.action{background:#F5F5F5;}
+.mPanel.action .label{width:rem(250);margin-left:rem(50);padding:rem(15) rem(20) rem(10);text-align:center;font-size:rem(30);letter-spacing:rem(2);border-top:rem(30) solid #F5F5F5;background:#FFF;@extend %center_flex;}
+.mPanel.action .mFeed{padding:rem(20);box-shadow:none;border-bottom:rem(2) solid #F5F5F5;}
+.mPanel.action .mFeed:last-child{border:0;}
+.mPanel.action .mFeed>.time{width:rem(200);margin-bottom:rem(20);padding-left:rem(40);justify-content:flex-start;}
+.mPanel.action .mFeed .author{display:none;}
+.mPanel.action .mFeed.followed{padding-top:rem(80)}
+.mPanel.action .mFeed.followed .author{display:flex;}
+.mPanel.action .mFeed>.more{position:absolute;bottom:rem(20);right:rem(40);padding:rem(20);}
+.mPanel.action .mFeed>.more:before{content:"展开更多";}
+
+
+
+.mPanel.button{margin:rem(20) rem(50) 0;padding-bottom:rem(20);@extend %center_flex;border-bottom:1px solid #F5F5F5;}
+.mPanel.button .apc-btn{display:flex;flex-direction:column;width:rem(160);height:rem(160);margin-right:rem(50);}
+.mPanel.button .apc-btn:last-child{margin:0;}
+.mPanel.button .apc-btn .icon{width:rem(65);height:rem(65);}
+.mPanel.button .apc-btn .txt{color:#999;line-height:1.5;font-size:rem(24)}
+.mPanel.button .apc-btn.like .icon{position:relative;top:rem(-1);}
+.mPanel.button .apc-btn.opinion .txt:before{content:"评论";}
+.mPanel.button .apc-btn.like .txt:before{content:"点赞";}
+.mPanel.button .apc-btn.collect .txt:before{content:"收藏";}
+.mPanel.button .apc-btn.share .txt:before{content:"分享";}
+.mPanel.button .apc-btn .n{position:absolute;top:rem(22);right:rem(25);height:rem(30);padding:0 rem(10);color:#FFF;font-size:rem(18);line-height:rem(26);border-radius:rem(50);border:rem(2) solid #FFF;background:rgba(#666,.85);}
+.mPanel.button .apc-btn.c .txt{color:$color_orange_bright;}
+.mPanel.button .apc-btn.c .n{background:$color_orange_bright;}
+
+
+
+.mPanel.content.line{border-bottom:rem(20) solid #F5F5F5;background:#F5F5F5;}
+.mPanel.content.line:before{display:block;padding:rem(30) rem(50) 0;font-size:rem(30);color:#999;}
+.mPanel.content.line .mlist{display:flex;overflow:auto;}
+.mPanel.content.line .mlist .mContent{position:relative;margin:rem(30) 0 rem(30) rem(50);padding:0;}
+.mPanel.content.line.poster .mlist .mContent{margin-bottom:rem(50);}
+.mPanel.content.line .mlist .mContent:last-child{border-right:rem(30) solid transparent;}
+.mPanel.content.line .pic{background-repeat:no-repeat;background-size:cover;}
+.mPanel.content.line .pic.cover{width:rem(480);height:rem(270);border-radius:rem(20);}
+.mPanel.content.line .pic.poster{width:rem(405);height:rem(720);box-shadow:0 0 rem(30) rgba(#000,.5);}
+.mPanel.content.line .time{display:block !important;height:auto !important;margin-top:rem(10);padding:rem(10) rem(20);text-align:center;}
+.mPanel.content.line .time .trial{padding-right:rem(20);color:$color_green;}
+.mPanel.content.line .time .trial:before{content:"可试看 ";}
+.mPanel.content.line .time .trial:after{content:" 分钟";}
+.mPanel.content.line .time .full{padding-left:rem(20);color:#666;border-left:rem(1) solid #999;}
+.mPanel.content.line .time .full:before{content:"总共 ";}
+.mPanel.content.line .time .full:after{content:" 分钟";}
+
+.mPanel.content.line.relation:before{content:"相关课程";}
+.mPanel.content.line.recent:before{content:"最近学习";}
+.mPanel.content.line.recommend:before{content:"老师推荐";}
+// .mPanel.content.line.multi:before{content:"最新课程";}
+.mPanel.content.line .more{width:rem(650);height:rem(80);margin:0 auto;font-size:rem(30);color:#666;border-radius:rem(100);background:#FFF;@extend %center_flex;}
+.mPanel.content.line .more .n{font-size:inherit;}
+.mPanel.content.line .more .n:before{content:"查看全部 "}
+.mPanel.content.line .more .n:after{content:" 个课程"}
+
+.mPanel.content.line .mContent .CD{position:absolute;top:0;left:0;padding:rem(5) rem(15);color:#FFF;font-size:rem(18);border-top-left-radius:rem(20);border-bottom-right-radius:rem(20);background:rgba(#000,.85);}
+.mPanel.content.line .mContent .CD:before{content:"中会倒计："}
+.mPanel.content.line .mContent .CD:after{content:"天";margin-left:rem(5)}
+
+
+.mPanel.content.line.multi{border:0;border-top:rem(20) solid #F5F5F5;background:#FFF;}
+.mPanel.content.line.multi .mlist{display:flex;overflow:visible;flex-wrap:wrap;}
+.mPanel.content.line.multi .mContent{margin:rem(30) rem(30) 0 rem(15);border:0 !important;}
+.mPanel.content.line.multi .mContent:nth-child(2n+1){margin:rem(30) rem(15) 0 rem(30);border:0 !important;}
+.mPanel.content.line.multi .mContent .pic{width:rem(330);height:rem(185);border-radius:rem(15);border:1px solid transparent;}
+.mPanel.content.line.multi .mContent .pic .icon{transform:scale(.75)}
+.mPanel.content.line.multi .time{display:none !important;}
+.mPanel.content.line.multi .more{width:rem(690);margin-top:rem(30);height:rem(80) !important;margin-bottom:rem(30);background:#F5F5F5;}
+
+.mPanel.topic .more{width:rem(690);height:rem(80) !important;margin:0 auto rem(30);font-size:rem(30);color:#666;border-radius:rem(100);background:#FFF;@extend %center_flex;background:#F5F5F5;}
+.mPanel.topic .more .n{font-size:inherit;}
+.mPanel.topic .more .n:before{content:"查看全部 "}
+.mPanel.topic .more .n:after{content:" 套系列课"}
+
+.mPanel.topic .mlist{display:flex;flex-wrap:wrap;padding-bottom:rem(30);}
+.mPanel.topic .mTopic{position:relative;@extend %center_flex;width:rem(690);height:rem(276);}
+.mPanel.topic .mTopic:nth-child(2n){margin:rem(30) rem(30) 0 rem(30)}
+.mPanel.topic .mTopic:nth-child(2n-1){margin:rem(30) rem(30) 0 rem(30);}
+.mPanel.topic .mTopic .pic{position:absolute;z-index:0;width:100%;height:100%;box-shadow:0 0 rem(30) rgba(#000,.1);border-radius:rem(30);background-size:cover;}
+.mPanel.topic .mTopic .name{position:relative;z-index:1;}
+.mPanel.topic .mTopic .summary{display:none;}
+
+
+.mPanel .apc-switch{width:rem(690);height:rem(60);margin:rem(30) auto 0;border-radius:rem(100);border:rem(1) solid #EEE;background:#F5F5F5;}
+.mPanel .apc-switch .icon{display:none;}
+.mPanel .apc-switch .sw_i{color:#999}
+.mPanel .apc-switch .sw_i.c{color:#333}
+.mPanel .apc-switch .sw_s{border-radius:rem(100);background:#FFF;}
+
+
+
+
+

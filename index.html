@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <title>主应用</title>
+
+  <script>
+    window.__XINYAOS_KEY__ = "#yunyaOS";
+
+    function isDevice(name) {
+      var agent = navigator.userAgent.toLowerCase();
+      switch (name) {
+        case 'Windows':
+          return !!agent.match(/windows nt/i);
+        case 'Mac':
+          return !!agent.match(/macintosh/i);
+        case 'iPhone':
+          return !!agent.match(/iphone/i) || !!agent.match(/iPod/i);
+        case 'iPad':
+          return !!agent.match(/ipad/i);
+        case 'iOS':
+          return !!agent.match(/iphone/i) || !!agent.match(/iPod/i) || !!agent.match(/ipad/i);
+        case 'Android':
+          return !!agent.match(/android/i);
+        case 'oldAndroid':
+          return !!agent.match(/android/i) && (parseInt(agent.substring(31, 34)) < 4.1);
+        case 'wechat':
+          return !!agent.match(/micromessenger/i);
+        case 'Desktop':
+          return !!agent.match(/windows nt/i) || !!agent.match(/macintosh/i) || !!agent.match(/ipad/i);
+        case 'Mobile':
+          return !!agent.match(/iphone/i) || !!agent.match(/iPod/i) || !!agent.match(/android/i) || !!agent.match(
+            /micromessenger/i);
+      }
+    }
+
+    function resize() {
+
+
+      var w = document.body.offsetWidth;
+      var h = document.body.offsetHeight;
+      var fontPC = (w / 1920) * 8;
+      var fontMobile = parseInt((w / 750) * 32 * 1);
+
+      if (isDevice("Mobile")) {
+        $('html').css('font-size', fontMobile + 'px');
+        isDevice("iOS") ? $('body').addClass('iPhone') : ""
+      } else {
+        $('html').css('font-size', fontPC + 'px')
+          .find('body').removeClass('iPhone');
+      }
+    }
+
+  </script>
+
+
+  <style>
+    #yunyaOS .M {
+      width: 0;
+      height: 0;
+    }
+
+    #yunyaOS .M .B {
+      position: fixed;
+      top: 400px;
+      left: 50px;
+      width: 100rem;
+      height: 80rem;
+      /* background: red; */
+      -webkit-box-shadow: 0 0 6.25rem rgb(0 0 0 / 20%);
+      box-shadow: 0 0 6.25rem rgb(0 0 0 / 20%);
+      border-radius: 1.25rem;
+      background: rgba(255, 255, 255, 0.5);
+      z-index: 555;
+      transition: 'all .4s';
+    }
+
+    #yunyaOS .M .B.b2 {
+      top: 550px;
+      left: 50px;
+    }
+
+    #yunyaOS .M .B.max {
+      top: 0 !important;
+      left: 0 !important;
+      width: 100%;
+      height: 100%;
+    }
+
+    #yunyaOS .M .B.min {
+      top: 70%;
+      left: -10rem !important;
+      width: 10rem;
+      height: 10rem;
+      opacity: 0.3 !important;
+    }
+
+    /* #yunyaOS .M .B.min:hover {
+      cursor: pointer;
+      transform: translateX(10px)
+    } */
+
+    #yunyaOS .M .B.min .pH,
+    #yunyaOS .M .B.min .P {
+      display: none;
+    }
+
+    #yunyaOS .M .B .action-mini {
+      display: none;
+    }
+
+    #yunyaOS .M .B.min .action-mini {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 600;
+    }
+
+
+    .fr {
+      float: right;
+    }
+
+    .fl {
+      float: left;
+    }
+
+    #yunyaOS .M .B .pH {
+      height: 20px;
+      line-height: 20px;
+      background: #f4f4f4;
+    }
+
+    #yunyaOS .M .B .P {
+      top: 20px;
+    }
+
+    #yunyaOS .M .B .btn {
+      margin: 0 5px;
+      height: 20px;
+      line-height: 20px;
+      z-index: 556;
+      cursor: pointer;
+    }
+
+    #yunyaOS .M .B .btn:hover {
+      text-decoration: underline;
+    }
+
+    #yunyaOS .M .B .L {
+      text-align: center;
+      line-height: 80rem;
+    }
+
+    #yunyaOS #miniAppList {
+      width: auto;
+      position: fixed;
+      top: 10%;
+      left: -10rem;
+      max-height: 80%;
+      z-index: 999;
+      overflow-y: scroll;
+      transition: 'all .4s';
+      padding-right: 2rem;
+    }
+
+    #yunyaOS #miniAppList:hover {
+      left: 0;
+    }
+
+    #yunyaOS #miniAppList .miniAppList {
+      padding-left: 1rem;
+      /* -webkit-box-shadow: 0 0 6.25rem rgb(0 0 0 / 20%);
+      box-shadow: 0 0 6.25rem rgb(0 0 0 / 20%); */
+      width: 11rem;
+      background: none;
+      /* background: rgba(255, 255, 255, 0.5); */
+    }
+
+    #yunyaOS #miniAppList .miniAppList .m {
+      cursor: pointer;
+      width: 10rem;
+      text-align: center;
+      line-height: 10rem;
+      height: 10rem;
+      border-radius: 1.25rem;
+      /* background: rgba(255, 255, 255, 0.5); */
+      background: #f4f4f4;
+      margin: 1.5rem 0;
+      transition: 'all .4s';
+      color: rgba(000, 000, 000, 0.5);
+    }
+
+    #yunyaOS #miniAppList .miniAppList .m.c {
+      background: #3D73CC;
+      color: #fff;
+    }
+
+    #yunyaOS #miniAppList .miniAppList .m:hover {
+      margin-left: 1rem;
+
+    }
+
+  </style>
+
+
+</head>
+
+<body onresize="resize()">
+
+  <div id="yunyaOS">
+
+    <!-- 最小化菜单 -->
+    <div id="miniAppList">
+      <div class="miniAppList">
+      </div>
+    </div>
+
+    <!-- 最大化菜单 -->
+    <!-- <div id="maxMenu"></div> -->
+
+    <div class="yunyaOS" id="app_desktop">
+      <div>主应用容器</div> <br>桌面加载中...
+    </div>
+
+  </div>
+</body>
+
+
+<script>
+  resize()
+
+</script>
+
+
+</html>

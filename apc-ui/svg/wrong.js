@@ -1,0 +1,1 @@
+export default '<svg class="Wrong" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M16.3,14.7l7.7,7.7l7.7-7.7l1.5,1.5L25.5,24l7.7,7.7l-1.5,1.5L24,25.5l-7.7,7.7l-1.5-1.5l7.7-7.7l-7.7-7.7L16.3,14.7z"/></svg>';
